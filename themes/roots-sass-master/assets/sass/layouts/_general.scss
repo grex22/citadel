@@ -1,0 +1,27 @@
+html{
+  font-size:14px;
+}
+
+.container{max-width:970px;}
+.banner .container{max-width:1170px;}
+
+// Content wrapper
+.wrap {
+  font-family:"Raleway";
+}
+
+// Main content area
+.main {
+  @include make-sm-column($main-sm-columns);
+  .sidebar-primary & {
+    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+  }
+}
+
+.btn{
+  border-bottom:4px solid darken($blue,10);
+  @include transition(.2s);
+}
+.btn-primary{
+  padding: 10px 15px;
+}

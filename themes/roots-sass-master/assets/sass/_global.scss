@@ -1,0 +1,96 @@
+body{
+  font-family:"Raleway"!important;
+  padding-top:100px;
+  transition:.2s padding-top;
+}
+body.logged-in header.banner{
+  padding-top: 32px;
+  
+  @media screen and (max-width: 782px){
+    padding-top:46px;
+  }
+}
+p {
+  margin: 0 0 15px;
+  line-height: 28px;
+}
+h1,h2,h3,h4,h5,h6{
+  color:#577E88;
+}
+.main{
+  h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.feature_blurb{
+  h3{margin-bottom:15px;}
+  .pull-left{
+    margin:0 20px 20px 0;
+  }
+  p{
+    line-height:21px;
+  }
+}
+
+.feature .jumbotron{
+  padding-right: 0;
+  padding-left: 0;
+}
+.feature_block_white{
+  padding:30px 0 55px 0;
+  background:white;
+  border-bottom:1px solid #ccc;
+  background-image:url('../img/grip.png');
+  background-position:bottom;
+  background-repeat:repeat-x; 
+}
+
+.feature_block_gray{
+  padding:35px 0 55px 0;
+  background:$ghostgray;
+  border-bottom:1px solid #ccc;
+  
+  h2{
+    margin-bottom:25px;
+    line-height:36px;
+  }
+}
+aside.sidebar{
+  margin-top:40px;
+}
+.feature_block_dark{
+  padding:40px 0 60px 0;
+  background-color: $darkgray;
+  background-image: url('../img/meshbg.gif');
+  background-size:cover;
+  border-bottom:5px solid $blue;
+  color:white;
+  transition:.4s all;
+  &:hover{background-color:darken($blue, 20);}
+  
+  h2{
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 21px;
+    line-height: 38px;
+  }
+  
+  p{font-size:17px;margin-bottom:28px;line-height:28px;}
+  
+  .btn{
+    @include button-size(14px,25px,18px,auto, auto);
+  }
+}
+
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=text],
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=email],
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=tel],
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=url],
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=number],
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=password],
+body .gform_wrapper .gform_body .gform_fields .gfield select,
+body .gform_wrapper .gform_body .gform_fields .gfield textarea {
+	font-size:16px;
+}
