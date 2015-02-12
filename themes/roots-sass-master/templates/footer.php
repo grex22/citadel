@@ -34,7 +34,7 @@
         Citadel Structural Mechanics LLC<br>
         All Rights Reserved<br>
         <br>
-        <a href="<?php echo get_permalink('privacy-policy'); ?>">Privacy Policy</a>
+        <a href="<?php echo get_permalink(53); ?>">Privacy Policy</a>
       </div>
     </div>
   </div>

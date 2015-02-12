@@ -37,22 +37,22 @@
       <div class="row">
         <div class="col-md-6">
           <div class="feature_blurb">
-            <h3><a href="#">Structural Mechanics FEA</a></h3>
-            <a class="pull-left" href="#">
+            <h3><a href="<?php echo get_permalink(46);?>">Structural Mechanics FEA</a></h3>
+            <a class="pull-left" href="<?php echo get_permalink(46);?>">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/ortho-icon.png">
             </a>
             <p>Applying Finite Element Analysis (FEA) to provide clients with answers to product performance questions and insight into product behavior.</p>
-            <p><a href="#">The Citadel approach to FEA...</a></p>
+            <p><a href="<?php echo get_permalink(46);?>">The Citadel approach to FEA...</a></p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="feature_blurb">
-            <h3><a href="#">Design Optimization</a></h3>
-            <a class="pull-left" href="#">
+            <h3><a href="<?php echo get_permalink(46);?>?activetab=2">Design Optimization</a></h3>
+            <a class="pull-left" href="<?php echo get_permalink(46);?>?activetab=2">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/gears-icon.png">
             </a>
             <p>Leveraging decades of Product Development expertise to provide Design Guidance and Optimization.</p>
-            <p><a href="#">What makes Citadel different...</a></p>
+            <p><a href="<?php echo get_permalink(46);?>?activetab=2">What makes Citadel different...</a></p>
           </div>
         </div>
       </div>
