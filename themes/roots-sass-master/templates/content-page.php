@@ -40,7 +40,14 @@
                     
                     foreach($tabsarray as $tabtitle):
                       $tabs_string .= '<li';
-                      if($i == 1) $tabs_string.=' class="active"';
+					  if(isset($_GET['activetab'])):
+					    if($i == $_GET['activetab'] ):
+							$tabs_string .= ' class="active"';
+							$tabs_string .= ' data="'.$i.$_GET['activetab'].'"';
+						endif;
+					  else:
+                      	if($i == 1) $tabs_string.=' class="active"';
+					  endif;
                       $tabs_string.='><a href="#tab'.$i.'" data-toggle="tab">'.$tabtitle.'</a></li>';
                       $i++;
                     endforeach;
@@ -50,7 +57,13 @@
                     
                     foreach($tabscontent as $tabcont):
                       $tabscontent_string .= '<div class="tab-pane';
-                      if($i == 1) $tabscontent_string.=' active';
+					  if(isset($_GET['activetab'])):
+					  	if($i == $_GET['activetab']):
+							$tabscontent_string.=' active';
+						endif;
+					  else:
+                        if($i == 1) $tabscontent_string.=' active';
+					  endif;
                       $tabscontent_string.='" id="tab'.$i.'">'.$tabcont.'</div>';
                       $i++;
                     endforeach;
