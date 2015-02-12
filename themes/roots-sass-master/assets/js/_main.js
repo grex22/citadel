@@ -81,10 +81,11 @@ $(document).ready(UTIL.loadEvents);
 var url = document.location.toString();
 if (url.match('#')) {
     $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+    window.scrollTo(0, 0);
 } 
 
 // Change hash for page-reload
-$('.nav-tabs a').on('shown', function (e) {
+$('.nav-tabs a').on('shown.bs.tab', function (e) {
     window.location.hash = e.target.hash;
 });
 
