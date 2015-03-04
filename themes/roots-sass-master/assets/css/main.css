@@ -6734,7 +6734,7 @@ body.logged-in header.banner {
 }
 
 p {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
   line-height: 28px;
 }
 
@@ -6742,9 +6742,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #577E88;
 }
 
-.main h1, .main .h1, .main h2, .main .h2, .main h3, .main .h3 {
+.main h1, .main .h1, .main h2, .main .h2, .main h3, .main .h3, .main h4, .main .h4, .main h5, .main h6, .main .h5, .main .h6 {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+.main ol, .main ul {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.main blockquote {
+  font-size: 16px;
 }
 
 .feature_blurb h3 {
