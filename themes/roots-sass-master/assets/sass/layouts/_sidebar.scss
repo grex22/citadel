@@ -1,3 +1,18 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
+  
+  section{
+    margin-bottom:22px;
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    &.widget ul{
+      li{margin-bottom:10px;}
+    }
+  }
+  
+}
+.search-submit{
+  border-bottom: 2px solid $blue;
 }
