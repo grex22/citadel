@@ -74,7 +74,7 @@
         <div class="col-md-8 col-sm-12">
           <h2>Structural Mechanics FEA<br>&amp; Design Optimization.</h2>
           <p>Citadel Structural Mechanics speaks both languages: Analysis and Design.</p>
-          <a href="#" class="btn btn-primary">Work with Citadel Structural Mechanics</a>
+          <a href="#" class="btn btn-primary">Work with Citadel</a>
         </div>
       </div>
     </div>
@@ -83,6 +83,44 @@
     endif;
   ?>
   <?php if(!is_front_page()): ?>
+  <?php $imgs = get_field('header_images'); ?>
+  <?php if(have_rows('header_images')): ?>
+    <div class="image_header">
+      <div class="container">
+        <ul class="list-unstyled">
+    <?php if(sizeof($imgs) == 1): ?>
+      <?php
+        while( have_rows('header_images') ): the_row();
+          $image = get_sub_field('image');
+          echo "<li><img src='".$image['url']."'></li>";
+        endwhile;
+      ?>
+    <?php else: ?>
+      <?php
+        while( have_rows('header_images') ): the_row();
+          $image = get_sub_field('image');
+          echo "<li><img src='".$image['url']."'></li>";
+        endwhile;
+      ?>
+      <script>
+        $(function(){
+          var $lis = $(".image_header ul li");
+          function fademein(lis){
+            $(lis).css('opacity',1).prev().css('opacity',0);
+          }
+          $.each($lis, function(index, lis){
+            var delay = (index)*3000;
+            setTimeout(function(){
+              fademein(lis);}
+            , delay);
+          });
+        });
+      </script>
+    <?php endif; ?>
+        </ul>
+      </div>
+    </div>
+  <?php endif; ?>
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main" role="main">

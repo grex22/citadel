@@ -170,3 +170,30 @@ body.navcondensed{
     .btn-primary{font-size:21px;padding:10px 35px;}
   }
 }
+
+.image_header{
+  background-image:url('../../assets/img/img-header-bg.png');
+  height:auto;
+  margin-bottom:-40px;
+  background-repeat: repeat-x;
+  background-size:contain;
+  
+  ul{
+    position:relative;
+    li{
+      position:absolute;
+      opacity:0;
+      top:0;
+      @include transition(2.0s);
+      
+      img{
+        width:100%;
+        max-width:100%;
+      }
+    }
+    li:first-child{
+      position:relative;
+      opacity:1;
+    }
+  }
+}

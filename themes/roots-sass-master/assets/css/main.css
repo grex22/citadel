@@ -6754,6 +6754,9 @@ h1, h2, h3, h4, h5, h6 {
 .main ol li, .main ul li {
   margin-bottom: 11px;
 }
+.main ol.nav-tabs li, .main ul.nav-tabs li {
+  margin-bottom: -1px;
+}
 .main blockquote {
   font-size: 16px;
 }
@@ -7098,6 +7101,34 @@ body.navcondensed header .btn-primary {
 .feature .jumbotron .btn-primary {
   font-size: 21px;
   padding: 10px 35px;
+}
+
+.image_header {
+  background-image: url("../../assets/img/img-header-bg.png");
+  height: auto;
+  margin-bottom: -40px;
+  background-repeat: repeat-x;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+.image_header ul {
+  position: relative;
+}
+.image_header ul li {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+.image_header ul li img {
+  width: 100%;
+  max-width: 100%;
+}
+.image_header ul li:first-child {
+  position: relative;
+  opacity: 1;
 }
 
 .sidebar {
